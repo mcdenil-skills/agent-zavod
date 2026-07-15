@@ -1,0 +1,13 @@
+# Секреты и окружение
+.env
+.env.*
+*.key
+
+# Служебное
+node_modules/
+.DS_Store
+*.log
+_progress.md
+
+# Временные папки установщика
+.sklad-tmp/
