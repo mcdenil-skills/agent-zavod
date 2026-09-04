@@ -9,7 +9,7 @@
 #
 set -euo pipefail
 
-REPO="Ntmib/agent-zavod"
+REPO="mcdenil-skills/agent-zavod"
 BRANCH="main"
 
 say()  { printf "\n\033[1m%s\033[0m\n" "$1"; }
