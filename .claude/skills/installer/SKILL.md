@@ -11,7 +11,7 @@ allowed-tools: Bash, Read, Edit, Glob
 
 Метафора: инструменты лежат на складе (в репозитории Агент-Завода), а не на рабочем столе. Ты идёшь на склад, берёшь нужный, ставишь на рабочий стол (`.claude/skills/`) — и он включается. Всё сам, владелец руками ничего не качает.
 
-> **Склад** — репозиторий `https://github.com/Ntmib/agent-zavod`, папка `skills/`. Каждый скилл — подпапка `skills/<имя>/`. Качаешь ТОЛЬКО нужную подпапку.
+> **Склад** — репозиторий `https://github.com/mcdenil-skills/agent-zavod`, папка `skills/`. Каждый скилл — подпапка `skills/<имя>/`. Качаешь ТОЛЬКО нужную подпапку.
 > Репозиторий приватный — на машине должен быть доступ (`gh auth` или git-токен). Если клон падает с 403/404 — скажи владельцу проверить доступ, не выдумывай что скилла нет.
 
 ## Шаг 0. Пойми, какой скилл просят
@@ -27,7 +27,7 @@ allowed-tools: Bash, Read, Edit, Glob
 Скажи словами: «иду на склад и беру нужный инструмент». Затем:
 
 ```bash
-git clone --no-checkout --depth 1 https://github.com/Ntmib/agent-zavod.git .sklad-tmp
+git clone --no-checkout --depth 1 https://github.com/mcdenil-skills/agent-zavod.git .sklad-tmp
 cd .sklad-tmp
 git sparse-checkout init --no-cone
 printf '/skills/<имя>/\n' > .git/info/sparse-checkout
